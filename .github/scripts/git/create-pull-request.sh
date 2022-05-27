@@ -34,7 +34,7 @@ git commit -m "$message" || notice_and_exit "(no changes)"
 echo "::endgroup::"
 
 echo "::group::Push changes"
-git push -f origin "$branch"
+git push -f origin "$head_branch"
 echo "::endgroup::"
 
 
