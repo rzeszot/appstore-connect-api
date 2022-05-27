@@ -1,0 +1,13 @@
+name: Check for updates
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron:  '0 8 * * *'
+
+jobs:
+  check-for-updates:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: .github/scripts/check-for-updates.sh
