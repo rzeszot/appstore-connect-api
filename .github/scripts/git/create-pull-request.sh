@@ -33,7 +33,8 @@ echo "::group::Commit files"
 git commit -m "$message" || notice_and_exit "(no changes)"
 echo "::endgroup::"
 
-echo "::group::Commit files"
+echo "::group::Push changes"
+git push -f origin "$branch"
 echo "::endgroup::"
 
 
