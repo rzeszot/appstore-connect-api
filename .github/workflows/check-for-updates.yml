@@ -18,12 +18,12 @@ jobs:
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
+      - name: Configure git
+        run: .github/scripts/git/configure.sh
       - name: Download spec
         id: spec
         run: .github/scripts/spec/check-for-updates.sh
-      - name: Configure git
-        run: .github/scripts/git/configure.sh
       - name: Create pull request
-        run: .github/scripts/git/create-pull-request.sh "$version"
+        run: .github/scripts/spec/create-pull-request.sh "$version"
         env:
           version: ${{ steps.spec.outputs.spec_version }}
