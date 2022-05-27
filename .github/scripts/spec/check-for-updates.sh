@@ -1,5 +1,7 @@
 #!/bin/sh
 
+spec_file="spec.json"
+
 mkdir tmp
 cd tmp
 
@@ -11,14 +13,15 @@ echo "::group::Unzip"
 unzip app-store-connect-openapi-specification.zip
 echo "::endgroup::"
 
-spec_file=`ls *.json`
+spec_original_file=`ls *.json`
 
-mv "$spec_file" ..
+mv "$spec_original_file" "../$spec_file"
 
 cd ..
 rm -rf tmp
 
-spec_version=`cat "$spec_file" | jq -r .info.version`
+spec_version=`cat "$spec_original_file" | jq -r .info.version`
 
 echo ::set-output name=spec_file::$spec_file
+echo ::set-output name=spec_original_file::$spec_original_file
 echo ::set-output name=spec_version::$spec_version
