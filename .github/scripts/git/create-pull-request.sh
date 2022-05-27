@@ -44,4 +44,6 @@ gh pr create \
   --title "$message" \
   --body "bam!" \
   || notice_and_exit "(updated) `github_pr_url`"
+
+  notice_and_exit "(new) `github_pr_url`"
 echo "::endgroup::"
