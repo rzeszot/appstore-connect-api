@@ -5,6 +5,11 @@ head_branch="spec-$version"
 base_branch="main"
 message="Update spec to $version"
 
+if [ -z "$version" ]
+then
+  echo "::error::version is empty"
+  exit 1
+fi
 
 echo "::debug::version=$version"
 echo "::debug::head_branch=$head_branch"
