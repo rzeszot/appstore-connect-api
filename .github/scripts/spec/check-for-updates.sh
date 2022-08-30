@@ -21,6 +21,8 @@ mv "$spec_original_file" "../$spec_file"
 cd ..
 rm -rf tmp
 
+yq -P spec.json > spec.yml
+
 echo "::set-output name=spec_file::$spec_file"
 echo "::set-output name=spec_original_file::$spec_original_file"
 echo "::set-output name=spec_version::$spec_version"
