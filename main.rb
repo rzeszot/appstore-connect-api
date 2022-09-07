@@ -2,17 +2,11 @@ require 'yaml'
 
 yaml = YAML.load_file('spec.yml')
 
-
-yaml['components']['schemas'].each do |name, schema|
-  content = YAML.dump(schema)
-  File.write(File.join('Sources', name + '.swift'), content)
-
-
-  # puts name
-
-
-
-
+def generate(schema)
+  YAML.dump(schema)
 end
 
-# puts yaml
+
+yaml['components']['schemas'].each do |name, schema|
+  File.write(File.join('Sources', name + '.swift'), generate(schema))
+end
