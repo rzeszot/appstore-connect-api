@@ -1,5 +1,6 @@
----
-type: string
-enum:
-- BRANCH
-- TAG
+import Foundation
+
+enum CiGitRefKind: String, Codable {
+    case branch = "BRANCH"
+    case tag = "TAG"
+}

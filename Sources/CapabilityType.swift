@@ -1,31 +1,32 @@
----
-type: string
-enum:
-- ICLOUD
-- IN_APP_PURCHASE
-- GAME_CENTER
-- PUSH_NOTIFICATIONS
-- WALLET
-- INTER_APP_AUDIO
-- MAPS
-- ASSOCIATED_DOMAINS
-- PERSONAL_VPN
-- APP_GROUPS
-- HEALTHKIT
-- HOMEKIT
-- WIRELESS_ACCESSORY_CONFIGURATION
-- APPLE_PAY
-- DATA_PROTECTION
-- SIRIKIT
-- NETWORK_EXTENSIONS
-- MULTIPATH
-- HOT_SPOT
-- NFC_TAG_READING
-- CLASSKIT
-- AUTOFILL_CREDENTIAL_PROVIDER
-- ACCESS_WIFI_INFORMATION
-- NETWORK_CUSTOM_PROTOCOL
-- COREMEDIA_HLS_LOW_LATENCY
-- SYSTEM_EXTENSION_INSTALL
-- USER_MANAGEMENT
-- APPLE_ID_AUTH
+import Foundation
+
+enum CapabilityType: String, Codable {
+    case icloud = "ICLOUD"
+    case in_app_purchase = "IN_APP_PURCHASE"
+    case game_center = "GAME_CENTER"
+    case push_notifications = "PUSH_NOTIFICATIONS"
+    case wallet = "WALLET"
+    case inter_app_audio = "INTER_APP_AUDIO"
+    case maps = "MAPS"
+    case associated_domains = "ASSOCIATED_DOMAINS"
+    case personal_vpn = "PERSONAL_VPN"
+    case app_groups = "APP_GROUPS"
+    case healthkit = "HEALTHKIT"
+    case homekit = "HOMEKIT"
+    case wireless_accessory_configuration = "WIRELESS_ACCESSORY_CONFIGURATION"
+    case apple_pay = "APPLE_PAY"
+    case data_protection = "DATA_PROTECTION"
+    case sirikit = "SIRIKIT"
+    case network_extensions = "NETWORK_EXTENSIONS"
+    case multipath = "MULTIPATH"
+    case hot_spot = "HOT_SPOT"
+    case nfc_tag_reading = "NFC_TAG_READING"
+    case classkit = "CLASSKIT"
+    case autofill_credential_provider = "AUTOFILL_CREDENTIAL_PROVIDER"
+    case access_wifi_information = "ACCESS_WIFI_INFORMATION"
+    case network_custom_protocol = "NETWORK_CUSTOM_PROTOCOL"
+    case coremedia_hls_low_latency = "COREMEDIA_HLS_LOW_LATENCY"
+    case system_extension_install = "SYSTEM_EXTENSION_INSTALL"
+    case user_management = "USER_MANAGEMENT"
+    case apple_id_auth = "APPLE_ID_AUTH"
+}

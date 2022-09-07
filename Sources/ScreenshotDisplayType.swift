@@ -1,29 +1,30 @@
----
-type: string
-enum:
-- APP_IPHONE_65
-- APP_IPHONE_58
-- APP_IPHONE_55
-- APP_IPHONE_47
-- APP_IPHONE_40
-- APP_IPHONE_35
-- APP_IPAD_PRO_3GEN_129
-- APP_IPAD_PRO_3GEN_11
-- APP_IPAD_PRO_129
-- APP_IPAD_105
-- APP_IPAD_97
-- APP_DESKTOP
-- APP_WATCH_SERIES_7
-- APP_WATCH_SERIES_4
-- APP_WATCH_SERIES_3
-- APP_APPLE_TV
-- IMESSAGE_APP_IPHONE_65
-- IMESSAGE_APP_IPHONE_58
-- IMESSAGE_APP_IPHONE_55
-- IMESSAGE_APP_IPHONE_47
-- IMESSAGE_APP_IPHONE_40
-- IMESSAGE_APP_IPAD_PRO_3GEN_129
-- IMESSAGE_APP_IPAD_PRO_3GEN_11
-- IMESSAGE_APP_IPAD_PRO_129
-- IMESSAGE_APP_IPAD_105
-- IMESSAGE_APP_IPAD_97
+import Foundation
+
+enum ScreenshotDisplayType: String, Codable {
+    case app_iphone_65 = "APP_IPHONE_65"
+    case app_iphone_58 = "APP_IPHONE_58"
+    case app_iphone_55 = "APP_IPHONE_55"
+    case app_iphone_47 = "APP_IPHONE_47"
+    case app_iphone_40 = "APP_IPHONE_40"
+    case app_iphone_35 = "APP_IPHONE_35"
+    case app_ipad_pro_3gen_129 = "APP_IPAD_PRO_3GEN_129"
+    case app_ipad_pro_3gen_11 = "APP_IPAD_PRO_3GEN_11"
+    case app_ipad_pro_129 = "APP_IPAD_PRO_129"
+    case app_ipad_105 = "APP_IPAD_105"
+    case app_ipad_97 = "APP_IPAD_97"
+    case app_desktop = "APP_DESKTOP"
+    case app_watch_series_7 = "APP_WATCH_SERIES_7"
+    case app_watch_series_4 = "APP_WATCH_SERIES_4"
+    case app_watch_series_3 = "APP_WATCH_SERIES_3"
+    case app_apple_tv = "APP_APPLE_TV"
+    case imessage_app_iphone_65 = "IMESSAGE_APP_IPHONE_65"
+    case imessage_app_iphone_58 = "IMESSAGE_APP_IPHONE_58"
+    case imessage_app_iphone_55 = "IMESSAGE_APP_IPHONE_55"
+    case imessage_app_iphone_47 = "IMESSAGE_APP_IPHONE_47"
+    case imessage_app_iphone_40 = "IMESSAGE_APP_IPHONE_40"
+    case imessage_app_ipad_pro_3gen_129 = "IMESSAGE_APP_IPAD_PRO_3GEN_129"
+    case imessage_app_ipad_pro_3gen_11 = "IMESSAGE_APP_IPAD_PRO_3GEN_11"
+    case imessage_app_ipad_pro_129 = "IMESSAGE_APP_IPAD_PRO_129"
+    case imessage_app_ipad_105 = "IMESSAGE_APP_IPAD_105"
+    case imessage_app_ipad_97 = "IMESSAGE_APP_IPAD_97"
+}

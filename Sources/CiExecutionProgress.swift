@@ -1,6 +1,7 @@
----
-type: string
-enum:
-- PENDING
-- RUNNING
-- COMPLETE
+import Foundation
+
+enum CiExecutionProgress: String, Codable {
+    case pending = "PENDING"
+    case running = "RUNNING"
+    case complete = "COMPLETE"
+}

@@ -1,6 +1,7 @@
----
-type: string
-enum:
-- NEW
-- EXISTING
-- EXPIRED
+import Foundation
+
+enum SubscriptionCustomerEligibility: String, Codable {
+    case new = "NEW"
+    case existing = "EXISTING"
+    case expired = "EXPIRED"
+}

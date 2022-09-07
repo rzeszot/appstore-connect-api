@@ -1,5 +1,6 @@
----
-type: string
-enum:
-- IOS
-- MAC_OS
+import Foundation
+
+enum BundleIdPlatform: String, Codable {
+    case ios = "IOS"
+    case mac_os = "MAC_OS"
+}
