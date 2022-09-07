@@ -1,0 +1,6 @@
+---
+type: string
+enum:
+- CONSUMABLE
+- NON_CONSUMABLE
+- NON_RENEWING_SUBSCRIPTION

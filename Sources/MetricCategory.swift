@@ -1,0 +1,10 @@
+---
+type: string
+enum:
+- HANG
+- LAUNCH
+- MEMORY
+- DISK
+- BATTERY
+- TERMINATION
+- ANIMATION

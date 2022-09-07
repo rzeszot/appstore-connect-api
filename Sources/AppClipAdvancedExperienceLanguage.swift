@@ -1,0 +1,35 @@
+---
+type: string
+enum:
+- AR
+- CA
+- CS
+- DA
+- DE
+- EL
+- EN
+- ES
+- FI
+- FR
+- HE
+- HI
+- HR
+- HU
+- ID
+- IT
+- JA
+- KO
+- MS
+- NL
+- 'NO'
+- PL
+- PT
+- RO
+- RU
+- SK
+- SV
+- TH
+- TR
+- UK
+- VI
+- ZH

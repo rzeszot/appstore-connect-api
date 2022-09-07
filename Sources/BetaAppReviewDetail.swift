@@ -1,0 +1,62 @@
+---
+type: object
+title: BetaAppReviewDetail
+properties:
+  type:
+    type: string
+    enum:
+    - betaAppReviewDetails
+  id:
+    type: string
+  attributes:
+    type: object
+    properties:
+      contactFirstName:
+        type: string
+      contactLastName:
+        type: string
+      contactPhone:
+        type: string
+      contactEmail:
+        type: string
+      demoAccountName:
+        type: string
+      demoAccountPassword:
+        type: string
+      demoAccountRequired:
+        type: boolean
+      notes:
+        type: string
+  relationships:
+    type: object
+    properties:
+      app:
+        type: object
+        properties:
+          links:
+            type: object
+            properties:
+              self:
+                type: string
+                format: uri-reference
+              related:
+                type: string
+                format: uri-reference
+          data:
+            type: object
+            properties:
+              type:
+                type: string
+                enum:
+                - apps
+              id:
+                type: string
+            required:
+            - id
+            - type
+  links:
+    "$ref": "#/components/schemas/ResourceLinks"
+required:
+- links
+- id
+- type

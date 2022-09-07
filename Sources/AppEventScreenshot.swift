@@ -1,0 +1,62 @@
+---
+type: object
+title: AppEventScreenshot
+properties:
+  type:
+    type: string
+    enum:
+    - appEventScreenshots
+  id:
+    type: string
+  attributes:
+    type: object
+    properties:
+      fileSize:
+        type: integer
+      fileName:
+        type: string
+      imageAsset:
+        "$ref": "#/components/schemas/ImageAsset"
+      assetToken:
+        type: string
+      uploadOperations:
+        type: array
+        items:
+          "$ref": "#/components/schemas/UploadOperation"
+      assetDeliveryState:
+        "$ref": "#/components/schemas/AppMediaAssetState"
+      appEventAssetType:
+        "$ref": "#/components/schemas/AppEventAssetType"
+  relationships:
+    type: object
+    properties:
+      appEventLocalization:
+        type: object
+        properties:
+          links:
+            type: object
+            properties:
+              self:
+                type: string
+                format: uri-reference
+              related:
+                type: string
+                format: uri-reference
+          data:
+            type: object
+            properties:
+              type:
+                type: string
+                enum:
+                - appEventLocalizations
+              id:
+                type: string
+            required:
+            - id
+            - type
+  links:
+    "$ref": "#/components/schemas/ResourceLinks"
+required:
+- links
+- id
+- type

@@ -1,0 +1,8 @@
+---
+type: string
+enum:
+- SUCCESS
+- FAILURE
+- MIXED
+- SKIPPED
+- EXPECTED_FAILURE

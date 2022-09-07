@@ -1,0 +1,5 @@
+---
+type: string
+enum:
+- STACK_WITH_INTRO_OFFERS
+- REPLACE_INTRO_OFFERS

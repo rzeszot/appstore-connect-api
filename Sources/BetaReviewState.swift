@@ -1,0 +1,7 @@
+---
+type: string
+enum:
+- WAITING_FOR_REVIEW
+- IN_REVIEW
+- REJECTED
+- APPROVED

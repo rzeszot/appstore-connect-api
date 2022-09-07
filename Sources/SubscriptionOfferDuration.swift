@@ -1,0 +1,12 @@
+---
+type: string
+enum:
+- ONE_DAY
+- THREE_DAYS
+- ONE_WEEK
+- TWO_WEEKS
+- ONE_MONTH
+- TWO_MONTHS
+- THREE_MONTHS
+- SIX_MONTHS
+- ONE_YEAR
